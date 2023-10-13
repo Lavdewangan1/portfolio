@@ -1,294 +1,137 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth bg-[--color-primary]">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Lav</title>
     <link href="tailwind.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Nunito:wght@700&family=Roboto+Mono:wght@500&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="shortcut icon"
+        href="https://lh3.googleusercontent.com/pw/AIL4fc8j3DgvfMrkPzWtHiLUQRvftTtfU-YIZUnh7X0_-JSyLmLraqZZjV-sljbOGB3wmU639WPlhmD2cXHH2GK2KmsQuAunXyFgvuqnA0AdX6P2CHJIiuSYxFQTp8LjPHRycsylXVa8aomc4hx8gEHEQjk_=w898-h898-s-no?authuser=0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Nunito:wght@700&family=Roboto+Mono:wght@500&family=Source+Code+Pro&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/ba32483f6c.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="flex absolute overflow-x-hidden no-scrollbar bg-[--color-primary]">
-    <nav class="flex fixed top-0 left-0 h-28 w-[100vw] justify-center items-center">
+<!-- bg-gradient-to-b from-[rgba(0, 0, 0, 0.697)] to-[--color-primary] -->
+<body class="absolute overflow-x-hidden no-scrollbar bg-cover bg-bottom bg-no-repeat bg-fixed center" style="background-image: url(assets/home_background.jpg);">
+    <nav class="flex fixed top-0 left-0 h-28 w-[100vw] justify-center items-center z-50">
         <div class="flex flex-col justify-around md:flex-row md:justify-between items-center w-full h-full md:w-10/12">
-            <div class="w-16 h-16 bg-no-repeat bg-top bg-cover rounded-full"
+            <div class="w-14 h-14 bg-no-repeat bg-top bg-cover rounded-full"
                 style="background-image: url(https://lh3.googleusercontent.com/pw/AIL4fc8j3DgvfMrkPzWtHiLUQRvftTtfU-YIZUnh7X0_-JSyLmLraqZZjV-sljbOGB3wmU639WPlhmD2cXHH2GK2KmsQuAunXyFgvuqnA0AdX6P2CHJIiuSYxFQTp8LjPHRycsylXVa8aomc4hx8gEHEQjk_=w898-h898-s-no?authuser=0);"
                 alt="no image"></div>
             <ul id="nav-links"
                 class="flex justify-around md:justify-between items-center w-full sm:w-11/12 md:w-7/12 lg:w-6/12 flex-wrap">
                 <li class=""><a href="#home">Home</a></li>
                 <li class=""><a href="#projects">Projects</a></li>
-                <li class=""><a href="#utilities">Utilities</a></li>
+                <li class=""><a href="#services">Services</a></li>
                 <li class=""><a href="#about">About</a></li>
                 <li class="z-20"><a
-                        class="px-8 py-2 border border-solid hover:bg-[--color-tertiary] hover:text-[text-slate-100] hover:border-[--color-tertiary] cursor-pointer"
-                        id="special-btn">Hire Me</a></li>
+                        class="special-btn px-8 border border-solid bg-[--color-tertiary] text-[text-slate-100] border-[--color-tertiary] cursor-pointer py-2 hover:shadow-[0px_0px_10px_0.5px] hover:shadow-black">Hire Me</a></li>
             </ul>
         </div>
     </nav>
-    <section id="home" class="h-[100vh] bg-cover bg-bottom bg-no-repeat"
-        style="background-image: url(assets/home_background.jpg);">
-        <div class="flex justify-center items-center text-center" style="background-color: rgba(0, 0, 0, 0.697);">
+
+
+    <!--Home Section -->
+
+    <section id="home" class="h-[100vh]"
+        >
+        <div class="flex justify-center items-center text-center" style="background-color: #00000095;">
             <div class="w-[fit-content]">
-                <h3 class="text-2xl dark:text-[--color-tertiary]">Konnichiwa!</h3>
-                <h1 class="text-5xl text-white font-['Croissant_One'] lg:text-7xl">I'm Lav Dewangan</h1>
-                <h4 class="text-[--color-secondary] font-serif text-[1rem]">Front-end Developer</h4>
+                <h3 id="greet" class="text-2xl -translate-y-5 opacity-0 dark:text-[--color-tertiary]">Konnichiwa!</h3>
+                <h1 id="homeCenter" class="text-5xl text-white font-['Croissant_One'] lg:text-7xl tracking-widest opacity-0">I'm Lav Dewangan</h1>
+                <h4 id="prof" class="text-[--color-secondary] font-serif text-[1rem] translate-y-1 opacity-0">Front-end Developer</h4>
                 <a href="#about">
-                    <button
-                        class="px-8 py-2 mt-7 border border-solid text-[--color-secondary] font-['Source_Code_Pro'] border-inherit hover:bg-[--color-secondary] hover:text-[--color-primary] text-[0.9rem] font-medium">About
+                    <button id="butn"
+                        class="px-8 py-2 mt-7 border border-solid text-[--color-secondary] font-['Source_Code_Pro'] border-inherit hover:bg-[--color-secondary] hover:text-[--color-primary] text-[0.9rem] font-medium opacity-0">About
                         Me</button>
                 </a>
             </div>
         </div>
     </section>
-    <section id="projects" class="flex justify-center">
-        <div class="w-[95vw]">
-            <h1><span>I've made these </span> Projects ;)
-            </h1>
-            <div class="slider-container relative overflow-hidden">
-                <div class="content flex flex-row w-full">
-                    <a href="" class="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="w-full h-full">
-                            <img class="w-full" src="assets/card-image.jpg" alt="">
-                            <h2>Project-Name</h2>
-                            <p>Project-Discription</p>
-                        </div>
-                    </a>
+
+
+    <!-- This is the Project section 
+        I have to add all my Projects here -->
+
+        <!-- bg-gradient-to-b from-[rgba(0, 0, 0, 0.697)] to-[--color-primary] -->
+    <div class="bg-gradient-to-b from-[#00000095] to-[--color-primary] z-10">
+        <section id="projects" class="flex justify-center min-h-[100vh] pt-28">
+            <div class="w-[95vw]">
+                <h1 class="opacity-0 -translate-x-9"><span>I've made these </span> Projects ;)
+                </h1>
+                <div class="slider-container relative">
+                    <div class="content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full">
+
+
+                        <!-- Copy the below div when adding a project -->
+                        <a href="https://lavdewangan1.github.io/body-mind/" target="_blank" class="z-10">
+                            <div class="project w-full h-full">
+                                <img class="w-full" src="assets/Projects/bodyandmind.png" alt="">
+                                <h2 class="self-start">Minimalist Website</h2>
+                                <p class="shorter">It is a simplistic website that contains simple navigation smooth animations <button class="text-[gray] z-30 hidden">+ More</button></p>
+                            </div>
+                        </a>
+                        <a href="https://lavdewangan1.github.io/Business-webpage-template/" target="_blank" class="z-10">
+                            <div class="project w-full h-full">
+                                <img class="w-full" src="assets/Projects/businessTemplate.png" alt="">
+                                <h2 class="self-start">Business Template</h2>
+                                <p class="shorter">It is a simple bussiness template website with a sleek design<button class="text-[gray] z-30 hidden">+ More</button></p>
+                            </div>
+                        </a>
+
+
+                    </div>
                 </div>
-                <button id="prevBtn"
-                    class="slider-button absolute top-1/2 transform scale-125 -translate-y-1/2 left-0 w-4">&#10094;</button>
-                <button id="nextBtn"
-                    class="slider-button absolute top-1/2 transform scale-125 -translate-y-1/2 right-1 w-4">&#10095;</button>
             </div>
-        </div>
-    </section>
-    <section id="utilities" class="flex justify-center">
-        <div class="w-[95vw]">
-            <h1><span>You can use these </span>Tools ツ
-            </h1>
-            <div
-                class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-[60vh] gap-4 lg:grid-cols-4 content-start overflow-auto">
-                <a href=""
-                    class=" h-24 rounded-md border border-solid border-[#0c0835] bg-[#070520b4] flex items-center justify-around">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <style>
-                            svg {
-                                fill: #cbd5e1
-                            }
-                        </style>
-                        <path
-                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                    </svg>
-                    <div class="w-[fit-content]">
-                        <h2>Tool-Name</h2>
-                        <p>Tool-Discription</p>
-                    </div>
-                </a>
-                <a href=""
-                    class=" h-24 rounded-md border border-solid border-[#0c0835] bg-[#070520b4] flex items-center justify-around">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <style>
-                            svg {
-                                fill: #cbd5e1
-                            }
-                        </style>
-                        <path
-                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                    </svg>
-                    <div class="w-[fit-content]">
-                        <h2>Tool-Name</h2>
-                        <p>Tool-Discription</p>
-                    </div>
-                </a>
-                <a href=""
-                    class=" h-24 rounded-md border border-solid border-[#0c0835] bg-[#070520b4] flex items-center justify-around">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <style>
-                            svg {
-                                fill: #cbd5e1
-                            }
-                        </style>
-                        <path
-                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                    </svg>
-                    <div class="w-[fit-content]">
-                        <h2>Tool-Name</h2>
-                        <p>Tool-Discription</p>
-                    </div>
-                </a>
-                <a href=""
-                    class=" h-24 rounded-md border border-solid border-[#0c0835] bg-[#070520b4] flex items-center justify-around">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <style>
-                            svg {
-                                fill: #cbd5e1
-                            }
-                        </style>
-                        <path
-                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                    </svg>
-                    <div class="w-[fit-content]">
-                        <h2>Tool-Name</h2>
-                        <p>Tool-Discription</p>
-                    </div>
-                </a>
-                <a href=""
-                    class=" h-24 rounded-md border border-solid border-[#0c0835] bg-[#070520b4] flex items-center justify-around">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <style>
-                            svg {
-                                fill: #cbd5e1
-                            }
-                        </style>
-                        <path
-                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                    </svg>
-                    <div class="w-[fit-content]">
-                        <h2>Tool-Name</h2>
-                        <p>Tool-Discription</p>
-                    </div>
-                </a>
-                <a href=""
-                    class=" h-24 rounded-md border border-solid border-[#0c0835] bg-[#070520b4] flex items-center justify-around">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <style>
-                            svg {
-                                fill: #cbd5e1
-                            }
-                        </style>
-                        <path
-                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                    </svg>
-                    <div class="w-[fit-content]">
-                        <h2>Tool-Name</h2>
-                        <p>Tool-Discription</p>
-                    </div>
-                </a>
-                <a href=""
-                    class=" h-24 rounded-md border border-solid border-[#0c0835] bg-[#070520b4] flex items-center justify-around">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                        viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                        <style>
-                            svg {
-                                fill: #cbd5e1
-                            }
-                        </style>
-                        <path
-                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
-                    </svg>
-                    <div class="w-[fit-content]">
-                        <h2>Tool-Name</h2>
-                        <p>Tool-Discription</p>
-                    </div>
-                </a>
+        </section>
+    
+        <!-- This section contains the services I provide -->
+        <section id="services" class="flex justify-center min-h-[100vh]">
+            <div class="w-[95vw] pt-28">
+                <h1 class="opacity-0 -translate-x-9"><span>I can do these </span>Jobs ツ
+                </h1>
+    
             </div>
-        </div>
-    </section>
-    <section id="about" class="flex justify-center pt-28">
-        <p class="w-[95vw]">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate libero necessitatibus veniam id rerum. Ipsam pariatur quod nemo vel facilis placeat ullam fuga nostrum mollitia neque aliquid cupiditate, reiciendis delectus.
-        </p>
-    </section>
-    <section id="hire" class="hidden fixed h-full w-full z-10 bg-[#0000005d] items-center justify-center">
+        </section>
+    
+        <!-- This section tells about me -->
+        <section id="about" class="flex justify-center min-h-[100vh] pt-28">
+            <div class="w-[95vw]">
+                <h1 class="opacity-0 -translate-x-9"><span> This is </span> Me (⁠ ⁠╹⁠▽⁠╹⁠ ⁠)
+                </h1>
+                <p>
+
+                </p>
+            </div>
+        </section>
+    </div>
+    <section id="hire" class="hidden fixed top-0 h-[100vh] w-[100vw] z-50 bg-[#0000005d] items-center justify-center">
         <div id="hire-form"
-            class="relative h-3/4 w-2/5  bg-[#020617be] rounded-2xl shadow-[0px_0px_10px_0.5px] shadow-black">
+            class="relative h-3/4 w-11/12 sm:w-4/5 lg:w-2/5 md:w-3/5 bg-[#020617be] rounded-2xl shadow-[0px_0px_10px_0.5px] shadow-black">
             <span id="close-button"
                 class="absolute right-3 top-2 text-2xl font-bold font-['Nunito'] text-white cursor-pointer hover:bg-[#080d20] w-10 h-10 rounded-full flex items-center justify-center">x</span>
-            <form action="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 flex-col items-start w-4/5">
+            <!-- https://docs.google.com/spreadsheets/d/1Z9LTwArzx6Xt42IxqBMPVVLb0y0g4Z3fVxS7K1tqrgA/edit?usp=sharing -->
+            <form action=""
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 flex-col items-start w-4/5">
                 <label for="name">Enter your name</label>
                 <input type="text" id="name">
                 <label for="mail-id">Your email???</label>
                 <input type="email" id="mail-id">
                 <label for="no">Give number as well</label>
-                <input type="number" id="no">
+                <input type="text" id="no">
                 <label for="message">What you want????</label>
                 <textarea name="mail" id="" rows="5" class="resize-none" id="message"></textarea>
-                <input type="submit" class="border border-solid border-[#cbd5e1] text-[#cbd5e1] w-[fit-content] self-center cursor-pointer hover:bg-[#d8004cbb] hover:border-[#d8004cbb]">
+                <input type="submit"
+                    class="border border-solid border-[#cbd5e1] text-[#cbd5e1] w-[fit-content] self-center cursor-pointer hover:bg-[#d8004cbb] hover:border-[#d8004cbb]">
             </form>
         </div>
     </section>
-
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
