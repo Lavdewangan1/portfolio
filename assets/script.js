@@ -13,10 +13,14 @@ document.getElementById('close-button').addEventListener('click',()=>{
 
 // GSAP animations
 
-
+// Nav Animation
 gsap.fromTo('nav>div>ul>*',{opacity: 0,y:-20}, {y:0,ease:"Power2.easeOut", delay: 0.25, stagger: 0.25, opacity:1, duration:1})
 
 gsap.to("#homeCenter, #greet, #prof, #butn",{letterSpacing:0,delay: 0.25, ease:"Power2.easeOut",stagger: 0.25, opacity:1,duration:1, y:0, x:0})
+
+// mobile nav animation
+gsap.fromTo('#mobileNav>*',{opacity: 0,y:10}, {y:0,ease:"Power2.easeOut", delay: 0.25, stagger: 0.25, opacity:1, duration:1})
+
 
 
 // heading animation
@@ -31,19 +35,10 @@ heads.forEach((head)=>{
     onEnter: () => {
         gsap.to(head, { opacity: 1 , x:0,y:0, duration:0.5,ease:"Power2.easeOut"});
     }
-    ,
-    onEnterBack: () => {
-      gsap.to(head, { opacity: 1, x:0,y:0, duration:0.5,ease:"Power2.easeOut"});
-    },
-    onLeave: () => {
-      gsap.to(head, { opacity: 0, x:-36,y:0, duration:0.5,ease:"Power2.easeOut"});
-    },
-    onLeaveBack: () =>{
-      gsap.to(head, { opacity: 0, x:-36,y:0, duration:0.5,ease:"Power2.easeOut"});
-    },
   });
 });
 
+// project animation
 const projects = gsap.utils.toArray(".project")
 
 ScrollTrigger.create({
@@ -54,14 +49,7 @@ ScrollTrigger.create({
     onEnter: () => {
         gsap.to(".project", { opacity: 1 , x:0,y:0, duration:0.5,ease:"Power2.easeOut", stagger:0.5, delay:0.25});
     }
-    ,
-    onEnterBack: () => {
-      gsap.to(".project", { opacity: 1, x:0,y:0, duration:0.5,ease:"Power2.easeOut",stagger:0.25, delay:0.5});
-    },
-    onLeave: () => {
-      gsap.to(".project", { opacity: 0, x:0,y:32, duration:0.5,ease:"Power2.easeOut"});
-    },
-    onLeaveBack: () =>{
-      gsap.to(".project", { opacity: 0, x:0,y:32, duration:0.5,ease:"Power2.easeOut"});
-    },
   });
+
+
+
