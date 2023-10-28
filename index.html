@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>Lav</title>
     <link href="tailwind.css" rel="stylesheet">
-    <link rel="shortcut icon"
-        href="https://lh3.googleusercontent.com/pw/AIL4fc8j3DgvfMrkPzWtHiLUQRvftTtfU-YIZUnh7X0_-JSyLmLraqZZjV-sljbOGB3wmU639WPlhmD2cXHH2GK2KmsQuAunXyFgvuqnA0AdX6P2CHJIiuSYxFQTp8LjPHRycsylXVa8aomc4hx8gEHEQjk_=w898-h898-s-no?authuser=0">
+
+    <!-- facvicon -->
+    <link rel="shortcut icon" href="assets/logo.jpg">
+
+    <!-- google font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Nunito:wght@700&family=Roboto+Mono:wght@500&family=Source+Code+Pro&display=swap"
         rel="stylesheet">
@@ -15,15 +18,14 @@
 
 <!-- bg-gradient-to-b from-[rgba(0, 0, 0, 0.697)] to-[--color-primary] -->
 
-<body class="absolute overflow-x-hidden no-scrollbar bg-cover bg-bottom bg-no-repeat bg-fixed center"
+<body class="absolute overflow-x-hidden no-scrollbar bg-cover bg-no-repeat bg-fixed bg-center"
     style="background-image: url(assets/home_background.jpg);">
     <nav class="flex fixed top-0 left-0 h-28 w-[100vw] justify-center items-center z-50">
         <div
             class="flex flex-row sm:flex-col justify-between md:flex-row items-center w-11/12 sm:w-full h-full md:w-10/12">
             <a href="#home">
-                <div class="w-12 h-12 sm:w-14 sm:h-14 bg-no-repeat bg-top bg-cover rounded-full"
-                    style="background-image: url(https://lh3.googleusercontent.com/pw/AIL4fc8j3DgvfMrkPzWtHiLUQRvftTtfU-YIZUnh7X0_-JSyLmLraqZZjV-sljbOGB3wmU639WPlhmD2cXHH2GK2KmsQuAunXyFgvuqnA0AdX6P2CHJIiuSYxFQTp8LjPHRycsylXVa8aomc4hx8gEHEQjk_=w898-h898-s-no?authuser=0);"
-                    alt="no image"></div>
+                <div class="logo w-12 h-12 sm:w-14 sm:h-14 bg-no-repeat bg-top bg-cover rounded-full"
+                    style="background-image: url(assets/logo.jpg);" alt="no image"></div>
             </a>
             <ul id="nav-links"
                 class="flex justify-around md:justify-between items-center w-fit sm:w-11/12 md:w-7/12 lg:w-6/12 flex-wrap">
@@ -35,20 +37,20 @@
                             width="20" /><span>Services</span></a></li>
                 <li class=""><a href="#about"><img src="assets/icons/about.png" alt="Home"
                             width="20" /><span>About</span></a></li>
-                <a
-                    class="special-btn px-8 border border-solid bg-[--color-tertiary] text-[text-slate-100] border-[--color-tertiary] cursor-pointer py-2 hover:shadow-[0px_0px_10px_0.5px] hover:shadow-black whitespace-nowrap scale-[0.9] sm:scale-100">Hire
+                <a class="special-btn" href="https://www.fiverr.com/lavdewangan345" target="_blank">Hire
                     Me</a>
             </ul>
         </div>
     </nav>
     <!-- mobile view only -->
-    <ul id="mobileNav" class="fixed bottom-0 flex justify-around items-center w-full sm:hidden flex-wrap z-50 bg-[#020617bb]">
+    <ul id="mobileNav"
+        class="fixed bottom-0 flex justify-around items-center w-full sm:hidden flex-wrap z-50 bg-[--color-primary]">
         <li class=""><a href="#home"><img src="assets/icons/home.png" alt="Home" width="24" /></a></li>
         <li class=""><a href="#projects"><img src="assets/icons/project.png" alt="Home" width="24" />
-                </a>
+            </a>
         </li>
         <li class=""><a href="#services"><img src="assets/icons/service.png" alt="Home" width="24" />
-                </a>
+            </a>
         </li>
         <li class=""><a href="#about"><img src="assets/icons/about.png" alt="Home" width="24" /></a></li>
     </ul>
@@ -58,18 +60,20 @@
 
     <section id="home" class="h-[100vh]">
         <div class="flex justify-center items-center text-center" style="background-color: #00000095;">
-            <div class="w-[fit-content]">
-                <h3 id="greet" class="text-2xl -translate-y-5 opacity-0 dark:text-[--color-tertiary]">Konnichiwa!</h3>
+            <div class="w-[fit-content] mt-32">
+                <h3 id="greet"
+                    class="text-[1.5rem] -translate-y-5 opacity-0 dark:text-[--color-tertiary] font-['Source_Code_Pro'] font-bold">
+                    Konnichiwa!</h3>
                 <h1 id="homeCenter"
                     class="text-5xl text-white font-['Croissant_One'] lg:text-7xl tracking-widest opacity-0">I'm Lav
                     Dewangan</h1>
-                <h4 id="prof" class="text-[--color-secondary] font-serif text-[1rem] translate-y-1 opacity-0">Front-end
+                <h4 id="prof"
+                    class="text-[--color-secondary] font-mono text-[1rem] lg:text-[1.5rem] translate-y-1 opacity-0">
+                    Front-end
                     Developer</h4>
-                <a href="#about">
-                    <button id="butn"
-                        class="px-8 py-2 mt-7 border border-solid text-[--color-secondary] font-['Source_Code_Pro'] border-inherit hover:bg-[--color-secondary] hover:text-[--color-primary] text-[0.9rem] font-medium opacity-0">About
-                        Me</button>
-                </a>
+                <button id="butn"
+                    class="px-8 py-2 my-4 border border-solid text-[--color-secondary] border-inherit hover:bg-[--color-secondary] hover:text-[--color-primary] text-[1rem] font-medium opacity-0">Contact
+                    Me</button>
             </div>
         </div>
     </section>
@@ -78,17 +82,17 @@
     <!-- This is the Project section 
         I have to add all my Projects here -->
 
-    <!-- bg-gradient-to-b from-[rgba(0, 0, 0, 0.697)] to-[--color-primary] -->
-    <div class="bg-gradient-to-b from-[#00000095] to-[--color-primary] z-10">
+    <div class="bg-[--color-primary] z-10">
         <section id="projects" class="flex justify-center min-h-[100vh] pt-28">
-            <div class="w-[95vw]">
-                <h1 class="opacity-0 -translate-x-9"><span>I've made these </span> Projects ;)
+            <div class="w-[90vw]">
+                <h1 class="opacity-0 -translate-x-9"><span>I've made these </span> Projects :)
                 </h1>
                 <div class="slider-container relative">
                     <div class="content grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full">
 
 
                         <!-- Copy the below div when adding a project -->
+
                         <a href="https://lavdewangan1.github.io/body-mind/" target="_blank" class="z-10">
                             <div class="project w-full h-full">
                                 <img class="w-full" src="assets/Projects/bodyandmind.png" alt="">
@@ -106,8 +110,6 @@
                                         class="text-[gray] z-30 hidden">+ More</button></p>
                             </div>
                         </a>
-
-
                     </div>
                 </div>
             </div>
@@ -115,43 +117,104 @@
 
         <!-- This section contains the services I provide -->
         <section id="services" class="flex justify-center min-h-[100vh]">
-            <div class="w-[95vw] pt-28">
+            <div class="w-[90vw] pt-28">
                 <h1 class="opacity-0 -translate-x-9"><span>I can do these </span>Jobs ツ
                 </h1>
+                <div class="serviceContainer">
+                    <div class="service opacity-0 -translate-x-14">
+                        <div>
+                            <img src="assets/icons/design.png" alt="">
 
+                            <p>Let me bring your vision to life online. I specialize in creating tailored websites just
+                                for you. I'll handle all the design and front-end work, guaranteeing a website that's
+                                not only visually striking but also responsive, interactive, and incredibly
+                                user-friendly. Imagine a site that speaks your language, engaging visitors and leaving a
+                                lasting
+                                impression. I'm here to ensure every detail aligns with your vision, making a digital
+                                presence truly extraordinary. Let's embark on this exciting journey together,
+                                transforming your ideas into captivating online reality.</p>
+                        </div>
+                        <h2>Website Development</h2>
+                    </div>
+                    <div class="service opacity-0 translate-x-14">
+                        <div>
+                            <img src="assets/icons/website-dev.png" alt="">
+
+                            <p>I would be delighted to utilize the design you have provided or refer to platforms like
+                                figma or any other platform that you prefer. My objective is to develop a website of
+                                extraordinary quality that aligns flawlessly with your vision in all aspects. With your
+                                invaluable guidance, I am wholeheartedly dedicated to bringing your website to fruition,
+                                ensuring that its visual appeal and functionality exceed your loftiest
+                                expectations. Working together, we will collaborate to craft something genuinely
+                                awe-inspiring for your online presence.</p>
+                        </div>
+                        <h2>Development From Reference</h2>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- This section tells about me -->
-        <section id="about" class="flex justify-center min-h-[100vh] pt-28">
-            <div class="w-[95vw]">
-                <h1 class="opacity-0 -translate-x-9"><span> This is </span> Me (⁠ ⁠╹⁠▽⁠╹⁠ ⁠)
+        <section id="about" class="flex relative justify-center min-h-[100vh] pt-28 pb-16">
+            <div class="w-[90vw] flex items-center flex-col relative">
+                <h1 class="opacity-0 -translate-x-9 self-start"><span> This is </span> Me ;)
                 </h1>
-                <p>
-
-                </p>
+                <ul class="social">
+                        <a href="https://www.instagram.com/teeck_u_/" target="_blank"><img src="assets/icons/instagram.png" alt=""></a>
+                        <a href="https://github.com/Lavdewangan1" target="_blank"><img src="assets/icons/github.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/lav-dewangan-a2b40b293/" target="_blank"><img src="assets/icons/linkedin.png" alt=""></a>
+                    </ul>
+                <div class="container w-full flex flex-wrap items-center justify-center mb-10">
+                    <img src="assets/about.jpg" alt="Photo"
+                        class="w-full px-4 sm:w-3/4 md:w-1/3 rounded-md mb-3 opacity-0 translate-y-9">
+                    <p class="text-justify w-full px-4 sm:w-3/4 md:w-1/2 opacity-0 -translate-y-9">
+                        I am a web developer, who is constantly learning new technologies to improve my skills. And I
+                        have been
+                        playing the flute for quite some time now, and it has become a passion of mine. I also enjoy
+                        calisthenics, which is a form of exercise that involves complex movements and requires a lot of
+                        strength and flexibility. My goal is to be able to perform these movements with ease and grace,
+                        while also maintaining my fitness levels.
+                    </p>
+                </div>
             </div>
+            
         </section>
     </div>
     <section id="hire" class="hidden fixed top-0 h-[100vh] w-[100vw] z-50 bg-[#0000005d] items-center justify-center">
         <div id="hire-form"
-            class="relative h-3/4 w-11/12 sm:w-4/5 lg:w-2/5 md:w-3/5 bg-[#020617be] rounded-2xl shadow-[0px_0px_10px_0.5px] shadow-black">
+            class="relative h-fit w-4/5 lg:w-2/5 md:w-3/5 bg-[#020617] rounded-lg shadow-[0px_0px_10px_0.5px] shadow-black flex justify-center border border-solid border-[#06103b95] items-center">
             <span id="close-button"
-                class="absolute right-3 top-2 text-2xl font-bold font-['Nunito'] text-white cursor-pointer hover:bg-[#080d20] w-10 h-10 rounded-full flex items-center justify-center">x</span>
+                class="absolute right-3 top-2 cursor-pointer hover:bg-[#0d1534] w-10 h-10 rounded-full flex items-center justify-center"><img
+                    src="assets/icons/close.png" alt="Home" width="15" /></span>
             <!-- https://docs.google.com/spreadsheets/d/1Z9LTwArzx6Xt42IxqBMPVVLb0y0g4Z3fVxS7K1tqrgA/edit?usp=sharing -->
-            <form action=""
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-2 flex-col items-start w-4/5">
-                <label for="name">Enter your name</label>
-                <input type="text" id="name">
-                <label for="mail-id">Your email???</label>
-                <input type="email" id="mail-id">
-                <label for="no">Give number as well</label>
-                <input type="text" id="no">
-                <label for="message">What you want????</label>
-                <textarea name="mail" id="" rows="5" class="resize-none" id="message"></textarea>
-                <input type="submit"
-                    class="border border-solid border-[#cbd5e1] text-[#cbd5e1] w-[fit-content] self-center cursor-pointer hover:bg-[#d8004cbb] hover:border-[#d8004cbb]">
+
+            <!-- Form -->
+            <form name="submit-to-google-sheet"
+                action="https://script.google.com/macros/s/AKfycbw1U-1BxMcBQCbtRN-aL4UYe2H0zD2dMbjS1n_-Hym22FBCoxQKthRk5dj0APj7dXhx/exec"
+                method="post" class="flex flex-col w-4/5 mx-5 my-10 sm:m-20">
+                <h1 class="text-2xl text-center font-['Nunito'] mb-4">Message</h1>
+                <div>
+                    <input type="text" class="inputField" required="" name="Name" id="name">
+                    <label for="name">Name</label>
+                </div>
+                <div>
+                    <input type="email" class="inputField" required="" name="Email" id="mail-id">
+                    <label for="mail-id">Email</label>
+                </div>
+                <div>
+                    <input type="text" class="inputField" required="" name="Number" id="number">
+                    <label for="number">Phone No.</label>
+                </div>
+                <div>
+                    <input type="text" class="inputField" required="" name="Message" id="message">
+                    <label for="message">Message</label>
+                </div>
+                <input id="submit" type="submit"
+                    class="border border-solid border-[#cbd5e1] text-[#cbd5e1] px-3 py-1 w-[fit-content] self-center cursor-pointer hover:bg-[#d8004cbb] hover:border-[#d8004cbb] font-['Source_Code_Pro']">
             </form>
+            <div id="formLoad" class="flex items-center justify-center flex-col h-3/5 w-4/5 m-20 hidden">
+                <img src="assets/animation/load.gif" alt="Loading">
+            </div>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
@@ -160,6 +223,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwDc4w4hkfXVZSySLWLmKQbS4UjUX3BVjav78lIGCdn9M9YUuPdVw1ftblV5UB9YBYq/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            document.querySelector("form").classList.toggle('hidden')
+            document.querySelector("#close-button").classList.toggle('hidden')
+            document.querySelector("#formLoad").classList.toggle('hidden')
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    document.getElementById("formLoad").innerHTML = "Form Submitted!";
+                    setTimeout(() => {
+                        window.location.href = "https://lavdewangan1.github.io/portfolio/";
+                    }, 500)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
     <script src="assets/script.js"></script>
 </body>
 
